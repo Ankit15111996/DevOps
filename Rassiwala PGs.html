@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://oltify.com/xt/cs/uny102.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .skinColr { color: #ea4833; } .skinColr2 { color: #151212; }
+        .skinColr3 { color: #ea4833; } .skinColr4 { color: #a7a7a7; } 
+        .skinBg { background:#e29e2b; } .skinBg2 { background:#57792f;  }
+        .skinBg3 { background: #153830; } .skinBg4 { background: #2b4c47; }
+        .skinBg5 { background: #0b231e; }
+        .gradBg1 {
+            background-image: radial-gradient(circle at bottom left, rgba(255,255,255,0.54) 0%, #163830 75%);
+        }
+        .gradBg2 {
+            background-image: linear-gradient(90deg, #345852 50%, #204b43 50%)!important;
+        }
+        .pgFld { background: transparent; color: #ccc; border: 0; border-bottom: 0px solid #ba8326; border-bottom-width: .1rem; }
+        .OUscore { border: 0 solid #f3af3e; }
+        .txtColr { color: #c7c7c7; } .txtColr1 { color: #a2a2a2; }
+        .txtColr2 { color: #999;} .txtColr3 { color: #7f7f7f;}
+        .BIZ_ITM { border: 0 solid #9c6d1e; color: #b8b8b8; }
+        .BIZ_ITM:hover{ background: #fff; color: #555; }
+        .BX_SHADO { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        .FEATUR_IMG {
+            background-image: url(https://www.dreamhouzz.me/media/portfolio/img/5.png), radial-gradient(circle at bottom right, #2d2d2d 0%, #06685f 100%)!important;
+        }
+        .ftrSRCH { background: #2b504b; }
+        .ftrsInp { background: #2b504b!important;}
+        </style>
+    <style>
+        .VUPORT{
+            max-width: 1200px;;
+        }
+        .c73 {
+            grid-template-columns: 70% 30%;
+        }
+        .btnr{
+            display:inline-block;
+            border:1px solid grey;
+            border-radius:5px;
+            padding: 1rem;
+        }
+        .htext{
+            padding-left: 5rem;
+        }
+        @media only screen and (max-width: 805px){
+            .htext{
+            padding-left: 1rem;
+        }
+        }
+        @media only screen and (max-width: 768px){
+            .c73 {
+                grid-template-columns: 100%;
+            }
+            .himg{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="VUPORT mTopBot3 m0A">
+        <div class="G c73 pALL1 " style="padding-top: 5.5rem;">
+            <div class="htext skinColr2">
+                <h1 class="hL skinColr">Find your PG in<br>South Mumbai</h1>
+                <div class="mTop1" style="line-height:1.8">
+                    <span><i class="fa fa-check" aria-hidden="true"></i> Gent's PG</span> &nbsp; <span><i class="fa fa-check" aria-hidden="true"></i> Girl's PG</span> &nbsp; <span><i class="fa fa-check" aria-hidden="true"></i> Clove</span> <br> <span><i class="fa fa-check" aria-hidden="true"></i> Economic, Standared, Prmium</span>
+                </div>
+                </div>
+            <div class="himg"><img src="https://ozostays.com/0_CUS/img/Damodar.png" style="width:300px"></div>
+        </div>
+        <div id="SRCH" style="padding:0 1rem;max-width:1000px;" class="m0A centr">
+            <input inputmode="search" id="bsInp" placeholder="Type your need" type="text" class="sInp" style="margin-top: 2rem;width: 85%;padding:1rem" onkeyup="fAC(event, false);" onkeydown="return fNtr(event, false, true, 'Y');"><img src="/icons/fW.png" class="sIcn" onclick="find(false);">
+            <ul id="sACul" style="display: none;"></ul>
+        </div>
+        <div class="centr pALL1">
+            <div class="btnr mBot1">Andheri</div>
+            <div class="btnr  mBot1">Nariman Point</div>
+            <div class="btnr  mBot1">Dadar</div>
+            <div class="btnr  mBot1">Worli</div>
+            <div class="btnr  mBot1">Parel</div>
+            <div class="btnr mBot1">Kalbadevi</div>
+            <div class="btnr  mBot1">Fort Area</div>
+            <div class="btnr  mBot1">Back bay Reclamation</div>
+            <div class="btnr  mBot1">Colaba</div>
+            <div class="btnr  mBot1">Lal baug</div>
+        </div>
+    </div>
+</body>
+</html>
